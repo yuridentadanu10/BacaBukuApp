@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_genre"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:civ_border_color="@color/divider"
+        app:civ_border_width="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:lines="1"
+        android:text="@string/tv_name_writer"
+        android:textColor="@color/text_black"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_genre"
+        app:layout_constraintTop_toTopOf="@+id/image_genre" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:lines="1"
+        android:text="@string/username"
+        android:textColor="@color/secondary_text"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="@+id/image_genre"
+        app:layout_constraintStart_toEndOf="@+id/image_genre"
+        app:layout_constraintTop_toTopOf="@+id/image_genre" />
+
+    <TextView
+        android:id="@+id/tv_click_detail_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="open detail writer>>"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/image_genre"
+        app:layout_constraintStart_toEndOf="@+id/image_genre"
+        app:layout_constraintTop_toTopOf="@+id/image_genre"
+        app:layout_constraintVertical_bias="0.892" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
